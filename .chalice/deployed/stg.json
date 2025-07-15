@@ -1,0 +1,67 @@
+{
+  "resources": [
+    {
+      "name": "managed-layer",
+      "resource_type": "lambda_layer",
+      "layer_version_arn": "arn:aws:lambda:ap-northeast-2:462237588761:layer:fiva-api-server-stg-managed-layer:26"
+    },
+    {
+      "name": "send_fcm_msg",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg-send_fcm_msg"
+    },
+    {
+      "name": "schedule_floor_down_alert",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg-schedule_floor_down_alert"
+    },
+    {
+      "name": "schedule_floor_down_alert-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-stg-schedule_floor_down_alert-event"
+    },
+    {
+      "name": "schedule_floor_data",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg-schedule_floor_data"
+    },
+    {
+      "name": "schedule_floor_data-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-stg-schedule_floor_data-event"
+    },
+    {
+      "name": "schedule_stair_climbing_data",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg-schedule_stair_climbing_data"
+    },
+    {
+      "name": "schedule_stair_climbing_data-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-stg-schedule_stair_climbing_data-event"
+    },
+    {
+      "name": "schedule_fcm_msg",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg-schedule_fcm_msg"
+    },
+    {
+      "name": "schedule_fcm_msg-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-stg-schedule_fcm_msg-event"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-stg"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "q6kt7gjay8",
+      "rest_api_url": "https://q6kt7gjay8.execute-api.ap-northeast-2.amazonaws.com/stg-api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}

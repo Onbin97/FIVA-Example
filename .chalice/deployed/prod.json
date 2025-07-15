@@ -1,0 +1,92 @@
+{
+  "resources": [
+    {
+      "name": "managed-layer",
+      "resource_type": "lambda_layer",
+      "layer_version_arn": "arn:aws:lambda:ap-northeast-2:462237588761:layer:fiva-api-server-prod-managed-layer:58"
+    },
+    {
+      "name": "send_fcm_msg",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-send_fcm_msg"
+    },
+    {
+      "name": "send_fcm_msg_func",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-send_fcm_msg_func"
+    },
+    {
+      "name": "schedule_floor_data",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_floor_data"
+    },
+    {
+      "name": "schedule_floor_data-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_floor_data-event"
+    },
+    {
+      "name": "schedule_stair_climbing_data",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_stair_climbing_data"
+    },
+    {
+      "name": "schedule_stair_climbing_data-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_stair_climbing_data-event"
+    },
+    {
+      "name": "schedule_game_rank",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_game_rank"
+    },
+    {
+      "name": "schedule_game_rank-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_game_rank-event"
+    },
+    {
+      "name": "schedule_fcm_msg",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_fcm_msg"
+    },
+    {
+      "name": "schedule_fcm_msg-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_fcm_msg-event"
+    },
+    {
+      "name": "schedule_user_profile_migration",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_user_profile_migration"
+    },
+    {
+      "name": "schedule_user_profile_migration-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_user_profile_migration-event"
+    },
+    {
+      "name": "schedule_content_feedback_alert",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod-schedule_content_feedback_alert"
+    },
+    {
+      "name": "schedule_content_feedback_alert-event",
+      "resource_type": "cloudwatch_event",
+      "rule_name": "fiva-api-server-prod-schedule_content_feedback_alert-event"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:462237588761:function:fiva-api-server-prod"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "pnejlyhlp4",
+      "rest_api_url": "https://pnejlyhlp4.execute-api.ap-northeast-2.amazonaws.com/prod-api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
